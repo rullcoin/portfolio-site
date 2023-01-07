@@ -1,12 +1,13 @@
 import './App.css';
 import Intro from './components/Intro';
+import About from './components/About';
 
 function App() {
 
   return (
-    <div className="">
+    <div className="main-container">
     <Intro />
-      <h1>hi</h1>
+    <About />
     </div>
   );
 }

@@ -121,11 +121,14 @@ a {
 
 .rotate span {
   display: inline-flex;
-  animation: rotate 6s infinite;
+  animation: rotate 10s infinite;
 }
 
 .span-space {
   margin: 0 10px;
+}
+
+.main-container {
 }
 
 @keyframes slide-in {

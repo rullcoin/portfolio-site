@@ -10,7 +10,7 @@ const Intro = (() => {
 
         <div className='intro-container flex-center'>
         <div className='name-effect'>
-          <h3 className='rotate'>
+          <h4 className='rotate'>
             <span>R</span>
             <span>a</span>
             <span>u</span>
@@ -21,7 +21,7 @@ const Intro = (() => {
             <span>b</span>
             <span>a</span>
             <span>n</span>
-            </h3>
+            </h4>
         </div>
         <p>Full Stack Web Developer</p>
         </div>
