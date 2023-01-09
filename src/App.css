@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.column {
+  flex-direction: column;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: var(--background-color);
@@ -104,6 +108,21 @@ a:hover {
   border-bottom: 1px solid var(--text-color);
   position: sticky;
   top: 0;
+  width: 100%;
+}
+
+.hero-container {
+  width: 100%;
+}
+
+.about-container {
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-text {
+  width: 50%;
+  font-size: 1.33rem;
 }
 
 a {
@@ -129,6 +148,8 @@ a {
 }
 
 .main-container {
+  flex-direction: column;
+  justify-content: column;
 }
 
 @keyframes slide-in {
@@ -181,4 +202,39 @@ a {
 
 .name-effect span:nth-of-type(10) {
   animation-delay: 2s;
+}
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 6rem;
+  min-width: 1rem;
+  border: 1px dotted var(--text-color);
+  margin-left: 1.33rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.embla__slide i {
+  font-size: 2rem;
+}
+
+.embla__slide p {
+  font-size: 1rem;
+}
+
+.skill__index {
+  font-size: 0.5rem;
+  display: flex;
 }

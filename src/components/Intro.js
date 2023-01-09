@@ -3,7 +3,7 @@ import Header from './Header'
 
 const Intro = (() => {
   return (
-    <div>
+    <div className='hero-container'>
         <div className='header flex-center'>
         <Header />
         </div>
