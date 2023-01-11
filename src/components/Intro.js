@@ -4,7 +4,7 @@ import Header from './Header'
 const Intro = (() => {
   return (
     <div className='hero-container'>
-        <div className='header flex-center'>
+        <div className='header'>
         <Header />
         </div>
 
@@ -23,7 +23,9 @@ const Intro = (() => {
             <span>n</span>
             </h4>
         </div>
-        <p>Full Stack Web Developer</p>
+        <div className='flex-center current-title'>
+          <h4>Full Stack Web Developer</h4>
+        </div>
         </div>
     </div>
     

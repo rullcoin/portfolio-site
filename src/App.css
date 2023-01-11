@@ -2,7 +2,7 @@
   --background-color: #e3e5e8;
   --text-color: #28292c;
   --link: rgb(27, 129, 112);
-  --link-hover: rgb(24, 94, 82);
+  --header-color: rgb(139, 147, 146);
 }
 
 :root.dark-theme {
@@ -24,6 +24,7 @@
   align-items: center;
 }
 
+
 .column {
   flex-direction: column;
 }
@@ -33,12 +34,9 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   height: 100vh;
+  width: 100vw;
 }
 
-.toggle-switch {
-  position: relative;
-  width: 125px;
-}
 
 label {
   position: absolute;
@@ -92,12 +90,12 @@ a:hover {
 
 .toggle-switch {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-between;
+  padding: 0 5rem 0 3rem
 }
 
 .checkbox-container {
-  padding-left: 1rem;
+  padding-left: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,6 +107,17 @@ a:hover {
   position: sticky;
   top: 0;
   width: 100%;
+}
+
+.header-left, .header-right {
+  gap: 1rem;
+}
+
+.btn-toggle {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-container {
@@ -216,7 +225,6 @@ a {
 
 .embla__slide {
   flex: 0 0 6rem;
-  min-width: 1rem;
   border: 1px dotted var(--text-color);
   margin-left: 1.33rem;
   display: flex;
@@ -237,4 +245,58 @@ a {
 .skill__index {
   font-size: 0.5rem;
   display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .current-title {
+    font-size: 30px;
+  }
+
+  .carousel-container {
+    width: 100vw;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .toggle-switch {
+    padding: 0 2.5rem 0 1rem
+  }
+
+  .slider {
+    width: 80%;
+    height: 20px;
+    border-radius: 20px;
+  }
+
+  .slider::before {
+    top: 3px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .embla {
+    width: 65%;
+  }
+
+  .embla__slide {
+    flex: 0 0 4.5rem;
+    border: 1px dotted var(--text-color);
+    padding: 0.2rem;
+  }
+  
+  .embla__slide i {
+    font-size: 1.5rem;
+  }
+  
+  .embla__slide p {
+    font-size: 0.8rem;
+  }
+  
 }
