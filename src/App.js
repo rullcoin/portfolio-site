@@ -2,6 +2,7 @@ import './App.css';
 import Intro from './components/Intro';
 import About from './components/About';
 import Carousel from './components/Carousel';
+import Projets from './components/Projets';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div className="main-container flex-center">
     <Intro />
     <About />
+    <Projets />
     </div>
   );
 }

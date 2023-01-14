@@ -103,7 +103,6 @@ a:hover {
 
 .header {
   padding: 2rem 0 2rem 0;
-  border-bottom: 1px solid var(--text-color);
   position: sticky;
   top: 0;
   width: 100%;
@@ -125,13 +124,20 @@ a:hover {
 }
 
 .about-container {
-  flex-direction: column;
   gap: 3rem;
 }
 
-.about-text {
+.about-text, .project-text  {
   width: 50%;
   font-size: 1.33rem;
+}
+
+.projects-container {
+  width: 100%;
+}
+
+.project-text {
+  width: 50%;
 }
 
 a {
@@ -146,6 +152,7 @@ a {
   font-weight: bold;
   /* animation: slide-in 0.7s both; */
 }
+
 
 .rotate span {
   display: inline-flex;
@@ -246,6 +253,9 @@ a {
   font-size: 0.5rem;
   display: flex;
 }
+
+
+
 
 @media screen and (max-width: 750px) {
   .current-title {

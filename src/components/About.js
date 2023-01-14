@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 
 const About = () => {
   return (
-    <div className="about-container flex-center">
+    <div className="about-container flex-center column">
       <div className="About-wrapper flex-center column">
         <div className="about-text">
         <h2>About.</h2>
